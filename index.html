@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker House - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Identidade Visual -->
+    <header class="header-principal">
+        <div class="header-container">
+
+            <div class="caixa-logo">
+                <!-- Ajustado para voltar para a home ao clicar no logo -->
+                <a href="index.html">
+                    <img src="logo.png" alt="Logotipo da Minha Loja - Link para a página inicial" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Navegação por categorias -->
+            <nav class="nav-menu" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="index.html" class="highlight">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#" class="highlight">Promoções</a></li>
+                </ul>
+            </nav>
+
+            <!-- Carrinho de Compras -->
+            <div class="carrinho-box">
+                <a href="carrinho.html" class="link-carrinho" aria-label="Visualizar carrinho de compras">
+                    <span class="icone-carrinho-emoji">🛒</span>
+                    <span class="contador-itens">0</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- 2. Banner Principal -->
+    <section class="banner-principal-container">
+        <div class="banner-wrapper">
+            <img src="banner-sneaker.png" alt="Novo Lançamento de Tênis na Sneaker House com 30% de desconto" class="banner-imagem-item">
+        </div>
+    </section>
+
+    <!-- 3. Navegação por Categorias -->
+    <section class="categorias-secao">
+        <div class="categorias-container">
+
+            <!-- Categoria 1 -->
+            <a href="#" class="categoria-card">
+                <div class="categoria-imagem-box">
+                    <img src="cat-lancamentos.png" alt="Categoria Lançamentos" class="categoria-img">
+                </div>
+                <span class="categoria-nome">Lançamentos</span>
+            </a>
+
+            <!-- Categoria 2 -->
+            <a href="#" class="categoria-card">
+                <div class="categoria-imagem-box">
+                    <img src="cat-ofertas.png" alt="Categoria Ofertas" class="categoria-img">
+                </div>
+                <span class="categoria-nome">Ofertas</span>
+            </a>
+
+            <!-- Categoria 3 -->
+            <a href="#" class="categoria-card">
+                <div class="categoria-imagem-box">
+                    <img src="cat-acessorios.png" alt="Categoria Acessórios" class="categoria-img">
+                </div>
+                <span class="categoria-nome">Acessórios</span>
+            </a>
+
+            <!-- Categoria 4 -->
+            <a href="#" class="categoria-card">
+                <div class="categoria-imagem-box">
+                    <img src="cat-mais-vendidos.png" alt="Categoria Mais Vendidos" class="categoria-img">
+                </div>
+                <span class="categoria-nome">Mais Vendidos</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- 4. Vitrine de Produtos -->
+    <section class="vitrine-secao">
+        <h2 class="vitrine-titulo">Destaques da Semana</h2>
+
+        <div class="produtos-grid">
+
+            <!-- Card 1 (Linkado para a página do produto) -->
+            <article class="produto-card">
+                <div class="produto-imagem-box">
+                    <img src="tenis1.png" alt="Tênis Casual Air Force 1 Masculino todo branco" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Air Force 1 '07 Masculino</h3>
+                    <p class="produto-preco">R$ 759,99</p>
+                    <!-- Ajustado para abrir o produto.html -->
+                    <a href="produto.html" class="btn-comprar" style="text-align: center; text-decoration: none; display: block;">Comprar</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="produto-card">
+                <div class="produto-imagem-box">
+                    <img src="tenis2.png" alt="Tênis Casual Nike Big Low em tons de branco e azul marinho" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Nike Big Low Masculino</h3>
+                    <p class="produto-preco">R$ 444,59</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="produto-card">
+                <div class="produto-imagem-box">
+                    <img src="tenis3.png" alt="Tênis de Corrida Nike Zoom Fly 6 em tons de azul claro, escuro e laranja" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Nike Zoom Fly 6 Masculino</h3>
+                    <p class="produto-preco">R$ 949,99</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="produto-card">
+                <div class="produto-imagem-box">
+                    <img src="tenis4.png" alt="Tênis Casual Air Max Excee Feminino em tons de rosa claro, bege e branco" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Air Max Excee Feminino</h3>
+                    <p class="produto-preco">R$ 607,90</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="produto-card">
+                <div class="produto-imagem-box">
+                    <img src="tenis5.png" alt="Tênis Esportivo Nike Revlution 8 Feminino com tons de rosa claro, escuro e branco" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Nike Revolution 8 Feminino</h3>
+                    <p class="produto-preco">R$ 299,00</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="produto-card esgotado">
+                <div class="produto-imagem-box">
+                    <span class="etiqueta-esgotado">ESGOTADO</span>
+                    <img src="tenis6.png" alt="Tênis Casual Gamma Force Feminino com tons de rosa e branco" class="produto-img" loading="lazy" width="300" height="300">
+                </div>
+                <div class="produto-info">
+                    <h3 class="produto-nome">Tennis Gamma Force Feminino</h3>
+                    <p class="produto-preco">R$ 380,99</p>
+                    <button class="btn-comprar" disabled>Esgotado</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>

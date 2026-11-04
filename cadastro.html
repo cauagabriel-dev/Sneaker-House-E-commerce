@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Sneaker House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Identidade Visual Mantida -->
+    <header class="header-principal">
+        <div class="header-container">
+            <div class="caixa-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logotipo da Minha Loja - Link para a página inicial" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav-menu" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="index.html" class="highlight">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#" class="highlight">Promoções</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-box">
+                <a href="carrinho.html" class="link-carrinho" aria-label="Visualizar carrinho de compras">
+                    <span class="icone-carrinho-emoji">🛒</span>
+                    <span class="contador-itens">1</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL: CADASTRO E CHECKOUT -->
+    <main class="cadastro-container">
+        <h1 class="cadastro-titulo">Finalizar Compra</h1>
+
+        <form action="#" method="POST" class="formulario-checkout">
+            
+            <!-- Bloco 1: Dados Pessoais -->
+            <fieldset class="bloco-formulario">
+                <legend>Dados Pessoais</legend>
+                
+                <div class="campo-grupo">
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" required placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="email-cliente">E-mail:</label>
+                    <input type="email" id="email-cliente" required placeholder="exemplo@email.com">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cpf-cliente">CPF:</label>
+                    <input type="text" id="cpf-cliente" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}|\d{11}">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="tel-cliente">Telefone / WhatsApp:</label>
+                    <input type="tel" id="tel-cliente" required placeholder="(11) 99999-9999">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="data-nasc">Data de Nascimento:</label>
+                    <input type="date" id="data-nasc" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="senha-cliente">Senha:</label>
+                    <input type="password" id="senha-cliente" required placeholder="Crie uma senha forte">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="avatar-cliente">Foto de Perfil (Opcional):</label>
+                    <input type="file" id="avatar-cliente" accept="image/*">
+                </div>
+            </fieldset>
+
+            <!-- Bloco 2: Endereço de Entrega -->
+            <fieldset class="bloco-formulario">
+                <legend>Endereço de Entrega</legend>
+
+                <div class="campo-grupo">
+                    <label for="cep-entrega">CEP:</label>
+                    <input type="text" id="cep-entrega" required placeholder="00000-000">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="rua-entrega">Rua / Logradouro:</label>
+                    <input type="text" id="rua-entrega" required placeholder="Av. Paulista, Rua Exemplo...">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="num-entrega">Número:</label>
+                    <input type="text" id="num-entrega" required placeholder="123">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="comp-entrega">Complemento:</label>
+                    <input type="text" id="comp-entrega" placeholder="Apto 42, Bloco B...">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="bairro-entrega">Bairro:</label>
+                    <input type="text" id="bairro-entrega" required placeholder="Centro">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cidade-entrega">Cidade:</label>
+                    <input type="text" id="cidade-entrega" required placeholder="São Paulo">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="estado-entrega">Estado:</label>
+                    <select id="estado-entrega" required class="input-select">
+                        <option value="">Selecione...</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PR">Paraná</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Bloco 3: Forma de Pagamento -->
+            <fieldset class="bloco-formulario">
+                <legend>Forma de Pagamento</legend>
+
+                <div class="pagamento-opcoes">
+                    
+                    <label class="pagamento-item">
+                        <input type="radio" name="pagamento" value="pix" required>
+                        <span class="icone-pagamento">⚡</span>
+                        <span>PIX</span>
+                    </label>
+
+                    <label class="pagamento-item">
+                        <input type="radio" name="pagamento" value="cartao">
+                        <span class="icone-pagamento">💳</span>
+                        <span>Cartão de Crédito</span>
+                    </label>
+
+                    <label class="pagamento-item">
+                        <input type="radio" name="pagamento" value="boleto">
+                        <span class="icone-pagamento">📄</span>
+                        <span>Boleto Bancário</span>
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <!-- Termos e Botão de Envio -->
+            <div class="termos-e-envio">
+                <label for="termos-uso" class="checkbox-label">
+                    <input type="checkbox" id="termos-uso" required>
+                    <span>Aceito os Termos de Uso e Políticas da loja.</span>
+                </label>
+
+                <button type="submit" class="btn-concluir">Concluir Cadastro e Pagar</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

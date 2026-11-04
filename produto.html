@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Force 1 '07 Masculino - Sneaker House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Identidade Visual -->
+    <header class="header-principal">
+        <div class="header-container">
+
+            <div class="caixa-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logotipo da Minha Loja - Link para a página inicial" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="nav-menu" aria-label="Navegação Principal">
+                <ul>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="index.html" class="highlight">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#" class="highlight">Promoções</a></li>
+                </ul>
+            </nav>
+
+            <div class="carrinho-box">
+                <a href="carrinho.html" class="link-carrinho" aria-label="Visualizar carrinho de compras">
+                    <span class="icone-carrinho-emoji">🛒</span>
+                    <span class="contador-itens">0</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="produto-detalhes-container">
+        
+        <!-- Layout de Duas Colunas -->
+        <div class="produto-layout-flex">
+            
+            <!-- Coluna da Esquerda (Imagens) -->
+            <section class="coluna-imagens">
+                <div class="foto-principal-box">
+                    <img src="tenis1.png" alt="Tênis Casual Air Force 1 Masculino todo branco - Foto Principal" class="foto-principal">
+                </div>
+                
+                <!-- 3 Miniaturas com efeito de borda no Hover -->
+                <div class="galeria-thumbnails">
+                    <img src="tenis1-lateral.png" alt="Air Force 1 - Ângulo 1" class="thumbnail">
+                    <img src="tenis1-traseira.png" alt="Air Force 1 - Ângulo 2" class="thumbnail">
+                    <img src="tenis1-solado.png" alt="Air Force 1 - Ângulo 3" class="thumbnail">
+                </div>
+            </section>
+
+            <!-- Coluna da Direita (Compra) -->
+            <section class="coluna-infos">
+                
+                <!-- Trilha de Navegação (Breadcrumb) -->
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Início</a> &gt; <a href="index.html">Masculino</a> &gt; <a href="#">Sneakers</a>
+                </nav>
+
+                <!-- Título H1 -->
+                <h1 class="produto-titulo-h1">Air Force 1 '07 Masculino</h1>
+
+                <!-- Avaliação em Estrelas -->
+                <div class="avaliacao-estrelas" aria-label="Avaliação: 5 de 5 estrelas">
+                    <span class="estrelas">★★★★★</span>
+                    <span class="quantidade-avaliacoes">(48 avaliações)</span>
+                </div>
+
+                <!-- Preço Antigo e Atual -->
+                <div class="bloco-precos">
+                    <span class="preco-antigo">R$ 899,90</span>
+                    <span class="preco-atual">R$ 759,99</span>
+                </div>
+
+                <!-- Seletor de Opções (Tamanho) -->
+                <div class="seletores-opcoes">
+                    <label for="seletor-tamanho">Escolha o Tamanho:</label>
+                    <select id="seletor-tamanho" class="input-seletor">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                </div>
+
+                <!-- Botão Principal de Compra estruturado como Link <a> -->
+                <div class="acoes-compra">
+                    <a href="carrinho.html" class="btn-adicionar-carrinho">Adicionar ao Carrinho</a>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Tabela de Especificações Técnicas Semântica (Requisito 2) -->
+        <section class="secao-especificacoes">
+            <h2 class="titulo-tabela">Especificações Técnicas</h2>
+            
+            <table class="tabela-semantica">
+                <tbody>
+                    <tr>
+                        <th scope="row">Marca</th>
+                        <td>Nike</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Modelo</th>
+                        <td>Air Force 1 '07</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Material do Cabedal</th>
+                        <td>Couro Legítimo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tipo de Solado</th>
+                        <td>Borracha Antiderrapante</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Peso Aproximado</th>
+                        <td>420g (Varia conforme o tamanho)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
