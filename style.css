@@ -34,7 +34,6 @@
   width: auto;
   display: block;
   object-fit: contain;
-  transition: transform scale(1.4);
   transition: transform 0.2s ease;
 }
 
@@ -155,7 +154,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3 ease;
+  transition: transform 0.3s ease;
 }
 
 /* Texto embaixo da bolinha */
